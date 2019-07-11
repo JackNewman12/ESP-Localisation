@@ -6,8 +6,8 @@ The goal of this thesis was to create a system that could passively monitor WiFi
 <a href="url"><img src="./images/SensorTracking.png" align="middle" height="400" ></a>
 
 Using the Log Path-Loss Model, the captured signal strength of a device could be converted to a rough estimation of distance. Using this information from  multiple sensors, trilateration can be used to calculated the most likely position of the device.
-<a href="url"><img src="./images/MultiPathVsDistance.png" align="middle" height="300" ></a>
 
+<a href="url"><img src="./images/MultiPathVsDistance.png" align="middle" height="300" ></a>
 
 **Sensors per M^2**| Average Accuracy (Metres)
 :-----:|:-----:
@@ -37,7 +37,7 @@ each of the devices
 The WeMoSNoiseGenerator folder contains code for a WeMoS firmware that simply connects to a WiFi network and generates random traffic.  This allows for easier plotting for the thesis and small sampling times.
 
 ## Base Station
-The basestation hardware was a Raspberry Pi. The data backbone was a pre-existing network. (This needs to exist already so that unexpecting devices wil lgenerate enough data to be tracked)
+The basestation hardware was a Raspberry Pi. The data backbone was a pre-existing network. (This needs to exist already so that unexpecting devices will generate enough data to be tracked)
 
 <a href="url"><img src="./images/WeMoSLayoutReport.png" align="middle" height="300" ></a>
 
