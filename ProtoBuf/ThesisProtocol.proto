@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+message ReceivedMessage {
+  required int32 deviceX = 1;
+  required int32 deviceY = 2;
+  optional float deviceVoltage = 3;
+  optional bool  lastPost = 4;
+  optional int32 submitTime = 5;
+  optional int32 wifiTime = 6;
+  repeated Device devices = 7;
+
+  message Device {
+  	required string mac = 1;
+  	repeated DataPoint datapoints = 2;
+  }
+
+  message DataPoint{
+  	required sint32 rssi = 1;
+  	required int32 secondsSince = 2;
+  }
+
+}
