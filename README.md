@@ -1,5 +1,5 @@
-# Passive WeMoS Localisation
-Passive Indoor Localisation of WiFi devices using WeMoS sensors
+# Passive ESP8266 Localisation
+Passive Indoor Localisation of WiFi devices using ESP8266 sensors
 
 The goal of this thesis was to create a system that could passively monitor WiFi communication between devices and use it for localisation on an extremely small budget. After optimisations, the final system had an average accuracy of around 1m to 2m based on the size of the room and the density of sensors. 
 
@@ -34,7 +34,7 @@ each of the devices
 * Light Solid: Connected to the server and waiting for a command (the server will automatically send the approriate commands)
 
 ## The Generators
-The WeMoSNoiseGenerator folder contains code for a WeMoS firmware that simply connects to a WiFi network and generates random traffic.  This allows for easier plotting for the thesis and small sampling times.
+The WeMoSNoiseGenerator folder contains code for esp8266 firmware that simply connects to a WiFi network and generates random traffic.  This allows for easier plotting for the thesis and small sampling times.
 
 ## Base Station
 The basestation hardware was a Raspberry Pi. The data backbone was a pre-existing network. (This needs to exist already so that unexpecting devices will generate enough data to be tracked)
